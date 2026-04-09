@@ -28,9 +28,6 @@ This repository contains my first Python programs, written during **Week 1 and W
 
 **Concept:** Variables, `float()`, arithmetic operations, `print()`
 
-Prompts the user to enter the length and width of a rectangle, then calculates and displays the area.
-
-**How it works:**
 ```python
 largo = float(input("Digite el largo : "))
 ancho = float(input("Digite el ancho : "))
@@ -38,24 +35,12 @@ area = largo * ancho
 print("El area del rectangulo es : ", area)
 ```
 
-**Sample output:**
-```
-Digite el largo : 5
-Digite el ancho : 3
-El area del rectangulo es :  15.0
-```
-
-**Skills demonstrated:** `input()`, `float()` casting, arithmetic operators, `print()` with concatenation
-
 ---
 
-### 🔷 2. Currency Converter (Colones → USD / Euros) — `ConversorMoneda.py`
+### 🔷 2. Currency Converter — `ConversorMoneda.py`
 
-**Concept:** Variables, division, f-strings, number formatting
+**Concept:** Division, f-strings, formatting
 
-Converts a Costa Rican Colón amount into US Dollars and Euros using fixed exchange rates.
-
-**How it works:**
 ```python
 monto_colones = float(input("Ingrese el monto en colones: "))
 
@@ -69,20 +54,46 @@ print(f"Monto en Dólares: ${dolares:,.2f}")
 print(f"Monto en Euros: €{euros:,.2f}")
 ```
 
-**Sample output:**
-```
-Ingrese el monto en colones: 50000
-Monto en Dólares: $107.76
-Monto en Euros: €92.08
+---
+
+### 🔷 3. Student Grade Status — `ResultadoNotas.py`
+
+**Concept:** Conditionals, logical operators
+
+```python
+nota = int(input("Ingrese la nota del alumno (0-100): "))
+
+if nota < 60:
+    print("Resultado: Reprobó")
+elif nota >= 60 and nota <= 69:
+    print("Resultado: Aplazó")
+else:
+    print("Resultado: Aprobó")
 ```
 
-**Skills demonstrated:** `float()`, division, f-strings, `:,.2f` number formatting
+---
+
+### 🔷 4. Sales Commission Calculator — `CalculoComisiones.py`
+
+**Concept:** Multi-branch conditionals, percentages
+
+```python
+monto_venta = float(input("Ingrese el monto de la venta: "))
+
+if monto_venta >= 250000:
+    comision = monto_venta * 0.10
+elif monto_venta < 200000:
+    comision = monto_venta * 0.05
+else:
+    # Este rango cubre entre 200000 y 250000 inclusive
+    comision = monto_venta * 0.07
+
+print(f"La comisión total es: ₡{comision:,.2f}")
+```
 
 ---
 
 ## 📚 Course Context
-
-These programs were developed as part of:
 
 | Detail | Info |
 |--------|------|
@@ -91,42 +102,35 @@ These programs were developed as part of:
 | 📅 Period | Feb 2026 – Nov 2026 |
 | 📖 Topics | Python basics, variables, operators, conditionals |
 
-**Coursework covers:** Python fundamentals, SQL, R, Power BI, data visualization, EDA, machine learning basics
-
 ---
 
 ## 🚀 How to Run
 
-1. Make sure **Python 3.x** is installed on your machine
-2. Clone this repo or download the `.py` files
-3. Open a terminal and run:
-
 ```bash
 python CalculoRectangulo.py
-```
-```bash
 python ConversorMoneda.py
+python ResultadoNotas.py
+python CalculoComisiones.py
 ```
 
 ---
 
 ## 🗺️ Learning Roadmap
 
-- [x] Variables and data types
-- [x] User input and type casting
-- [x] Arithmetic operators
-- [x] F-strings and number formatting
-- [x] Conditionals (if / elif / else) — *Week 3*
-- [ ] Loops (for / while) — *Coming soon*
-- [ ] Functions — *Coming soon*
-- [ ] Data structures (lists, dictionaries) — *Coming soon*
-- [ ] Pandas & data analysis — *Coming soon*
+- [x] Variables and data types  
+- [x] User input and type casting  
+- [x] Arithmetic operators  
+- [x] F-strings and formatting  
+- [x] Conditionals  
+- [ ] Loops — Coming soon  
+- [ ] Functions — Coming soon  
+- [ ] Data structures — Coming soon  
 
 ---
 
 ## 👩‍💻 Author
 
 **Jennifer Victoria Arriola Salazar**
-- 🎓 Technical Certificate in Data Analytics — Universidad Cenfotec
-- 💼 [LinkedIn](https://www.linkedin.com/in/jennifervictoriaarriolasalazar/)
+
+- 💼 [LinkedIn](https://www.linkedin.com/in/jennifervictoriaarriolasalazar/)  
 - 🐙 [GitHub](https://github.com/jenvic96)
