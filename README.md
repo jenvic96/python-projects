@@ -116,7 +116,7 @@ python ConversorMoneda.py
 - [x] User input and type casting
 - [x] Arithmetic operators
 - [x] F-strings and number formatting
-- [ ] Conditionals (if / elif / else) — *Week 3*
+- [x] Conditionals (if / elif / else) — *Week 3*
 - [ ] Loops (for / while) — *Coming soon*
 - [ ] Functions — *Coming soon*
 - [ ] Data structures (lists, dictionaries) — *Coming soon*
