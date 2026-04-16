@@ -1,32 +1,35 @@
 # 🐍 Python Beginner Projects
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Status](https://img.shields.io/badge/Status-In%20Progress-F5A623?style=for-the-badge)
-![Level](https://img.shields.io/badge/Level-Beginner-7AB648?style=for-the-badge)
+**Python Level: Beginner → Early Intermediate**
 
-> First Python scripts built as part of my **Technical Certificate in Data Analytics** at Universidad Cenfotec, Costa Rica 🇨🇷
+This repository contains my first Python programs, developed as part of my **Technical Certificate in Data Analytics** at **Universidad Cenfotec, Costa Rica 🇨🇷**.
 
 ---
 
-## 📋 About
+# 📋 About
 
-This repository contains my first Python programs, written during **Week 1 and Week 3** of my Data Analytics program. These projects cover Python fundamentals including:
+These projects represent my first steps in Python programming and problem-solving.
 
-- Variables and data types (`int`, `float`, `str`)
-- User input with `input()`
-- Arithmetic operations
-- String formatting with f-strings
-- Conditional logic (`if`, `elif`, `else`)
+Through these exercises, I have built a strong foundation in:
+
+* Variables and data types (`int`, `float`, `str`)
+* User input with `input()`
+* Arithmetic operations
+* String formatting with f-strings
+* Conditional logic (`if`, `elif`, `else`)
+* Loops (`while`, `for`)
+* Counters and accumulators
+* Basic data processing logic
 
 ---
 
-## 📂 Projects
+# 📂 Projects
 
----
+## 🔷 Basic Programs (Week 1)
 
-### 🔷 1. Rectangle Area Calculator — `CalculoRectangulo.py`
+### 1. Rectangle Area Calculator — `CalculoRectangulo.py`
 
-**Concept:** Variables, `float()`, arithmetic operations, `print()`
+**Concepts:** Variables, `float()`, arithmetic operations
 
 ```python
 largo = float(input("Digite el largo : "))
@@ -37,9 +40,9 @@ print("El area del rectangulo es : ", area)
 
 ---
 
-### 🔷 2. Currency Converter — `ConversorMoneda.py`
+### 2. Currency Converter — `ConversorMoneda.py`
 
-**Concept:** Division, f-strings, formatting
+**Concepts:** Division, formatting, f-strings
 
 ```python
 monto_colones = float(input("Ingrese el monto en colones: "))
@@ -56,9 +59,9 @@ print(f"Monto en Euros: €{euros:,.2f}")
 
 ---
 
-### 🔷 3. Student Grade Status — `ResultadoNotas.py`
+### 3. Student Grade Status — `ResultadoNotas.py`
 
-**Concept:** Conditionals, logical operators
+**Concepts:** Conditional logic, logical operators
 
 ```python
 nota = int(input("Ingrese la nota del alumno (0-100): "))
@@ -73,9 +76,9 @@ else:
 
 ---
 
-### 🔷 4. Sales Commission Calculator — `CalculoComisiones.py`
+### 4. Sales Commission Calculator — `CalculoComisiones.py`
 
-**Concept:** Multi-branch conditionals, percentages
+**Concepts:** Multi-branch conditionals, percentages
 
 ```python
 monto_venta = float(input("Ingrese el monto de la venta: "))
@@ -85,7 +88,6 @@ if monto_venta >= 250000:
 elif monto_venta < 200000:
     comision = monto_venta * 0.05
 else:
-    # Este rango cubre entre 200000 y 250000 inclusive
     comision = monto_venta * 0.07
 
 print(f"La comisión total es: ₡{comision:,.2f}")
@@ -93,18 +95,133 @@ print(f"La comisión total es: ₡{comision:,.2f}")
 
 ---
 
-## 📚 Course Context
+# 🔷 Loop-Based Programs (Week 3)
 
-| Detail | Info |
-|--------|------|
-| 🎓 Program | Technical Certificate in Data Analytics |
-| 🏫 Institution | Universidad Cenfotec, Costa Rica |
-| 📅 Period | Feb 2026 – Nov 2026 |
-| 📖 Topics | Python basics, variables, operators, conditionals |
+These exercises introduce **iteration and data processing**, key concepts for data analysis.
 
 ---
 
-## 🚀 How to Run
+### 5. Sum Until Zero — `SumaHastaCero.py`
+
+**Concepts:** `while`, accumulators, break
+
+```python
+acum = 0
+
+while True:
+    num = float(input("Digite un número: "))
+    acum += num
+    if num == 0:
+        break
+
+print("El total es:", acum)
+```
+
+---
+
+### 6. Product of Numbers — `ProductoNumeros.py`
+
+**Concepts:** `while`, counters, multiplication
+
+```python
+acum = 1
+cont = 1
+
+while cont <= 7:
+    num = float(input("Digite un número: "))
+    acum *= num
+    cont += 1
+
+print("El total es:", acum)
+```
+
+---
+
+### 7. Even and Odd Processing — `ParesImpares.py`
+
+**Concepts:** conditionals inside loops
+
+```python
+producto_pares = 1
+suma_impares = 0
+cont = 1
+
+while cont <= 12:
+    num = int(input("Digite un número: "))
+
+    if num % 2 == 0:
+        producto_pares *= num
+    else:
+        suma_impares += num
+
+    cont += 1
+
+print("Producto de pares:", producto_pares)
+print("Suma de impares:", suma_impares)
+```
+
+---
+
+### 8. Average Calculator — `PromedioEdades.py`
+
+**Concepts:** accumulators, counters
+
+```python
+acum = 0
+cont = 1
+
+while cont <= 10:
+    edad = int(input("Digite una edad: "))
+    acum += edad
+    cont += 1
+
+promedio = acum / 10
+
+print("El promedio es:", promedio)
+```
+
+---
+
+### 9. Sum of Odd Numbers (For Loop) — `SumaImparesFor.py`
+
+**Concepts:** `for`, `range()`, conditionals
+
+```python
+acum = 0
+
+for num in range(10):
+    valor = int(input("Digite un número entero: "))
+    if valor % 2 == 1:
+        acum += valor
+
+print("La suma de impares es:", acum)
+```
+
+---
+
+# 📊 Data Thinking (Early Stage)
+
+Although these are beginner exercises, they already simulate basic data analysis tasks:
+
+* Aggregation → sum, product, average
+* Filtering → even vs odd, conditional thresholds
+* Iteration → processing multiple inputs
+* Logical evaluation → decision-making based on conditions
+
+---
+
+# 📚 Course Context
+
+| Detail         | Info                                               |
+| -------------- | -------------------------------------------------- |
+| 🎓 Program     | Technical Certificate in Data Analytics            |
+| 🏫 Institution | Universidad Cenfotec, Costa Rica                   |
+| 📅 Period      | Feb 2026 – Nov 2026                                |
+| 📖 Topics      | Python fundamentals, logic, loops, problem solving |
+
+---
+
+# 🚀 How to Run
 
 ```bash
 python CalculoRectangulo.py
@@ -115,22 +232,25 @@ python CalculoComisiones.py
 
 ---
 
-## 🗺️ Learning Roadmap
+# 🗺️ Learning Roadmap
 
-- [x] Variables and data types  
-- [x] User input and type casting  
-- [x] Arithmetic operators  
-- [x] F-strings and formatting  
-- [x] Conditionals  
-- [ ] Loops — Coming soon  
-- [ ] Functions — Coming soon  
-- [ ] Data structures — Coming soon  
+✔ Variables and data types
+✔ User input and type casting
+✔ Arithmetic operations
+✔ String formatting (f-strings)
+✔ Conditionals
+✔ Loops (`while`, `for`)
+
+⬜ Functions — Coming soon
+⬜ Data structures — Coming soon
+⬜ Pandas / NumPy — Coming soon
+⬜ Data analysis projects — Coming soon
 
 ---
 
-## 👩‍💻 Author
+# 👩‍💻 Author
 
 **Jennifer Victoria Arriola Salazar**
 
-- 💼 [LinkedIn](https://www.linkedin.com/in/jennifervictoriaarriolasalazar/)  
-- 🐙 [GitHub](https://github.com/jenvic96)
+💼 LinkedIn
+🐙 GitHub
