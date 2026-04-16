@@ -20,6 +20,7 @@ Through these exercises, I have built a strong foundation in:
 * Loops (`while`, `for`)
 * Counters and accumulators
 * Basic data processing logic
+* Mathematical operations (factorial, percentages)
 
 ---
 
@@ -29,14 +30,7 @@ Through these exercises, I have built a strong foundation in:
 
 ### 1. Rectangle Area Calculator — `CalculoRectangulo.py`
 
-**Concepts:** Variables, `float()`, arithmetic operations
-
-```python
-largo = float(input("Digite el largo : "))
-ancho = float(input("Digite el ancho : "))
-area = largo * ancho
-print("El area del rectangulo es : ", area)
-```
+**Concepts:** Variables, arithmetic operations
 
 ---
 
@@ -44,54 +38,17 @@ print("El area del rectangulo es : ", area)
 
 **Concepts:** Division, formatting, f-strings
 
-```python
-monto_colones = float(input("Ingrese el monto en colones: "))
-
-tipo_cambio_dolar = 464
-tipo_cambio_euro = 543
-
-dolares = monto_colones / tipo_cambio_dolar
-euros = monto_colones / tipo_cambio_euro
-
-print(f"Monto en Dólares: ${dolares:,.2f}")
-print(f"Monto en Euros: €{euros:,.2f}")
-```
-
 ---
 
 ### 3. Student Grade Status — `ResultadoNotas.py`
 
-**Concepts:** Conditional logic, logical operators
-
-```python
-nota = int(input("Ingrese la nota del alumno (0-100): "))
-
-if nota < 60:
-    print("Resultado: Reprobó")
-elif nota >= 60 and nota <= 69:
-    print("Resultado: Aplazó")
-else:
-    print("Resultado: Aprobó")
-```
+**Concepts:** Conditional logic
 
 ---
 
 ### 4. Sales Commission Calculator — `CalculoComisiones.py`
 
-**Concepts:** Multi-branch conditionals, percentages
-
-```python
-monto_venta = float(input("Ingrese el monto de la venta: "))
-
-if monto_venta >= 250000:
-    comision = monto_venta * 0.10
-elif monto_venta < 200000:
-    comision = monto_venta * 0.05
-else:
-    comision = monto_venta * 0.07
-
-print(f"La comisión total es: ₡{comision:,.2f}")
-```
+**Concepts:** Multi-branch conditionals
 
 ---
 
@@ -105,108 +62,74 @@ These exercises introduce **iteration and data processing**, key concepts for da
 
 **Concepts:** `while`, accumulators, break
 
-```python
-acum = 0
-
-while True:
-    num = float(input("Digite un número: "))
-    acum += num
-    if num == 0:
-        break
-
-print("El total es:", acum)
-```
-
 ---
 
 ### 6. Product of Numbers — `ProductoNumeros.py`
 
-**Concepts:** `while`, counters, multiplication
-
-```python
-acum = 1
-cont = 1
-
-while cont <= 7:
-    num = float(input("Digite un número: "))
-    acum *= num
-    cont += 1
-
-print("El total es:", acum)
-```
+**Concepts:** counters, multiplication
 
 ---
 
 ### 7. Even and Odd Processing — `ParesImpares.py`
 
-**Concepts:** conditionals inside loops
-
-```python
-producto_pares = 1
-suma_impares = 0
-cont = 1
-
-while cont <= 12:
-    num = int(input("Digite un número: "))
-
-    if num % 2 == 0:
-        producto_pares *= num
-    else:
-        suma_impares += num
-
-    cont += 1
-
-print("Producto de pares:", producto_pares)
-print("Suma de impares:", suma_impares)
-```
+**Concepts:** filtering logic
 
 ---
 
 ### 8. Average Calculator — `PromedioEdades.py`
 
-**Concepts:** accumulators, counters
-
-```python
-acum = 0
-cont = 1
-
-while cont <= 10:
-    edad = int(input("Digite una edad: "))
-    acum += edad
-    cont += 1
-
-promedio = acum / 10
-
-print("El promedio es:", promedio)
-```
+**Concepts:** aggregation, averages
 
 ---
 
-### 9. Sum of Odd Numbers (For Loop) — `SumaImparesFor.py`
+### 9. Sum of Odd Numbers — `SumaImparesFor.py`
 
-**Concepts:** `for`, `range()`, conditionals
+**Concepts:** `for`, filtering
 
-```python
-acum = 0
+---
 
-for num in range(10):
-    valor = int(input("Digite un número entero: "))
-    if valor % 2 == 1:
-        acum += valor
+# 🆕 🔷 Additional Practice Programs
 
-print("La suma de impares es:", acum)
-```
+These programs demonstrate deeper understanding of loops, conditions, and data processing.
+
+---
+
+### 10. Factorial Calculator — `Factorial.py`
+
+**Concepts:** `for`, range, multiplication logic
+
+* Calculates the factorial of a number using iterative logic
+* Demonstrates reverse iteration and accumulation 
+
+---
+
+### 11. Tax Calculation for Products — `ImpuestoArticulos.py`
+
+**Concepts:** loops, percentages
+
+* Calculates 13% tax for multiple products
+* Applies repeated calculations over user input 
+
+---
+
+### 12. Sum of Positive and Negative Numbers — `SumaPositivosNegativos.py`
+
+**Concepts:** conditionals inside loops
+
+* Separates and sums positive and negative values
+* Demonstrates basic data classification logic 
 
 ---
 
 # 📊 Data Thinking (Early Stage)
 
-Although these are beginner exercises, they already simulate basic data analysis tasks:
+Although these are beginner exercises, they simulate real data analysis tasks:
 
 * Aggregation → sum, product, average
-* Filtering → even vs odd, conditional thresholds
+* Filtering → positive vs negative, even vs odd
 * Iteration → processing multiple inputs
-* Logical evaluation → decision-making based on conditions
+* Classification → separating data into categories
+* Mathematical modeling → factorial and percentages
 
 ---
 
@@ -217,7 +140,7 @@ Although these are beginner exercises, they already simulate basic data analysis
 | 🎓 Program     | Technical Certificate in Data Analytics            |
 | 🏫 Institution | Universidad Cenfotec, Costa Rica                   |
 | 📅 Period      | Feb 2026 – Nov 2026                                |
-| 📖 Topics      | Python fundamentals, logic, loops, problem solving |
+| 📖 Topics      | Python fundamentals, loops, logic, problem solving |
 
 ---
 
@@ -240,6 +163,7 @@ python CalculoComisiones.py
 ✔ String formatting (f-strings)
 ✔ Conditionals
 ✔ Loops (`while`, `for`)
+✔ Basic data processing
 
 ⬜ Functions — Coming soon
 ⬜ Data structures — Coming soon
